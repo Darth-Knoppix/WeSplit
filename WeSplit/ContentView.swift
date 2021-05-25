@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import UIKit
 
 let baseNumberOfPayers = 2
 
@@ -18,7 +17,7 @@ struct ContentView: View {
     let tipPercentages = [10, 15, 20, 25, 0]
     
     var currencySymbol: String {
-        return NSLocale.current.currencySymbol ?? "$"
+        return Locale.current.currencySymbol ?? "$"
     }
     
     var grandTotal: Double {
@@ -40,7 +39,7 @@ struct ContentView: View {
                 Section {
                     TextField("Amount", text: $billAmount)
                         .keyboardType(.decimalPad)
-                        .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                        .autocapitalization(.none)
                     
                     
                     Picker("Number of people", selection: $numberOfPayersIndex) {

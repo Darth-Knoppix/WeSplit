@@ -20,4 +20,4 @@ To get a better understanding of modern iOS development, expand my knowledge and
 
 ### Additional features
 
-- Uses `NSLocale` to get the user's preferred currency symbol e.g. UK -> `£`, US -> `$`
+- Uses `Locale` to get the user's preferred currency symbol e.g. UK -> `£`, US -> `$`
